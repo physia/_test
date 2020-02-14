@@ -1,0 +1,318 @@
+[bxd--name="area"] {
+    width: var(--bxd-width);
+    height: var(--bxd-height);
+}
+
+[bxd="resize"] [bxd--name="frm"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+[frms--name="area"] {
+    transition-property: width, height;
+    transition-duration: 0.35s;
+    width: var(--bxd-width);
+    height: var(--bxd-height);
+}
+
+[frms="resize"] [frms--name="frm"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.\:loaded .hlp {
+    animation: anm-init;
+}
+.drp {
+    overflow: auto;
+    position: absolute;
+    top: calc(var(--mdl-offset-top) * 1px);
+    left: calc(var(--mdl-offset-left) * 1px);
+    right: calc(var(--mdl-offset-right) * 1px);
+    bottom: calc(var(--mdl-offset-bottom) * 1px);
+    max-width: calc(var(--mdl-max-width) * 1px);
+    max-height: calc(var(--mdl-max-height) * 1px);
+    min-width: calc(var(--mdl-min-width) * 1px);
+    min-height: calc(var(--mdl-min-height) * 1px);
+    transform-origin: var(--mdl-origin);
+}
+
+/* drw pnl drp */
+.mdl-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    --an-scl-scale-from: 0.9;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.mdl-box:not([mdl="open"]):not([mdl="close"]) {
+    pointer-events: none;
+}
+
+.mdl:not([mdl]),
+.mdl[mdl="end"] {
+    display: none;
+}
+
+.mdl {
+    animation-duration: 0.2s;
+}
+.mnus {
+    position: relative;
+    overflow: hidden;
+    transition: all 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.mnu-sb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background: #ffffff;
+    z-index: 100;
+    transition: transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.mnu-sb[mnu="open"] {
+    transform: translateX(0%);
+}
+.sld,
+.sld-area {
+    position: relative;
+}
+
+.sld,
+.sld-area {
+    overflow: hidden;
+}
+
+.sld--indctrs {
+    position: absolute;
+    z-index: 1;
+    width: calc(var(--sld-scroll-width) * 1px);
+    height: calc(var(--sld-scroll-height) * 1px);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.sld--indctr {
+    position: absolute;
+    border-radius: 100%;
+    background-color: var(--clr-s, rgb(149, 117, 205));
+    transition: all 0.25s ease-out;
+}
+
+
+[sld="start"],
+[sld="end"] {
+    --sld-right: 0 !important;
+    --sld-left: 0 !important;
+    --sld-bottom: 0 !important;
+    --sld-top: 0 !important;
+}
+
+[sld="end"].sld-padding {
+    transition: padding 0.5s ease-out;
+}
+
+.sld-padding {
+    padding-right: calc(var(--sld-right)/2 * 1px);
+    padding-left: calc(var(--sld-left)/2 * 1px);
+    padding-top: calc(var(--sld-top)/2 * 1px);
+    padding-bottom: calc(var(--sld-bottom)/2 * 1px);
+}
+
+.sld--indctr-top {
+    width: calc(var(--sld-scroll-width) * 1.4px);
+    height: calc(var(--sld-scroll-width) * 2px);
+    opacity: calc(var(--sld-top, 0) / 150);
+    transform: translate(50%, -50%) scaleY(calc(0.001 + calc(var(--sld-top, 0) * calc(14 * var(--sld-height, 0) / 100) / 100) / var(--sld-scroll-width, 0)));
+    top: 0;
+    right: 50%;
+}
+
+.sld--indctr-bottom {
+    width: calc(var(--sld-scroll-width) * 1.4px);
+    height: calc(var(--sld-scroll-width) * 2px);
+    opacity: calc(var(--sld-bottom, 0) / 150);
+    bottom: 0;
+    transform: translate(50%, 50%) scaleY(calc(0.001 + calc(var(--sld-bottom, 0) * calc(14 * var(--sld-height, 0) / 100) / 100) / var(--sld-scroll-width, 0)));
+    right: 50%;
+}
+
+.sld--indctr-left {
+    width: calc(var(--sld-scroll-height) * 2px);
+    height: calc(var(--sld-scroll-height) * 1.4px);
+    opacity: calc(var(--sld-left, 0) / 150);
+    bottom: 0;
+    transform: translate(-50%, -50%) scaleX(calc(0.001 + calc(var(--sld-left, 0) * calc(14 * var(--sld-height, 0) / 100) / 100) / var(--sld-scroll-height, 0)));
+    top: 50%;
+    left: 0;
+}
+
+.sld--indctr-right {
+    width: calc(var(--sld-scroll-height) * 2px);
+    height: calc(var(--sld-scroll-height) * 1.4px);
+    opacity: calc(var(--sld-right, 0) / 150);
+    transform: translate(50%, -50%) scaleX(calc(0.001 + calc(var(--sld-right, 0) * calc(14 * var(--sld-height, 0) / 100) / 100) / var(--sld-scroll-height, 0)));
+    top: 50%;
+    right: 0;
+}
+.\:loaded .tbs {
+    animation: anm-init;
+}
+
+.tbs {
+    position: relative;
+    --tbs-x-delay: 0s, 0.2s;
+    --tbs-y-delay: 0s, 0.2s;
+}
+
+.tbs--rtl {
+    --tbs-x-delay: 0.2s, 0s;
+}
+
+.tbs--ttb {
+    --tbs-y-delay: 0.2s, 0s;
+}
+
+[tbs--name="indctr"] {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    right: calc(var(--tbs-indc-right) * 1px);
+    left: calc(var(--tbs-indc-left) * 1px);
+    bottom: 0;
+    transition-property: top, bottom, right, left;
+    will-change: top, bottom, right, left;
+    transition-delay: var(--tbs-y-delay), var(--tbs-x-delay);
+}
+
+[tbs\:mode="y"] [tbs--name="indctr"] {
+    width: 2px;
+    height: initial;
+    top: calc(var(--tbs-indc-top) * 1px);
+    bottom: calc(var(--tbs-indc-bottom) * 1px);
+}
+
+.tbs-cntnt .tb:not(.tbs-active) {
+    display: none;
+}
+
+[md2] [tbs--name="indctr"] {
+    border-radius: 6px 6px 0 0;
+    height: 3px;
+}
+
+[md2] [tbs\:mode="y"] [tbs--name="indctr"] {
+    border-radius: 0 6px 6px 0;
+    width: 3px;
+    height: initial;
+}
+[wv--name="area"] {
+    position: relative;
+}
+
+.wv--ripples {
+    pointer-events: none;
+    --wv-opacity-from: 0.1;
+    --wv-opacity-to: 0.21;
+    border-radius: inherit;
+    overflow: hidden;
+
+}
+
+.wv--ripple {
+    pointer-events: none;
+    border-radius: 100%;
+    position: absolute;
+    width: calc(var(--wv-diameter) * 1px);
+    height: calc(var(--wv-diameter) * 1px);
+    top: calc(var(--wv-y) * 1px);
+    left: calc(var(--wv-x) * 1px);
+    background-color: currentColor;
+    opacity: 0.21;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+.wv-crcl .wv--ripple {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 1000px;
+    animation-timing-function: cubic-bezier(.25, 1, .25, .9) !important
+}
+
+
+.wv--ripple-in {
+    animation-name: wv--ripple-in;
+}
+
+.wv--ripple-out {
+    --wv-opacity-from: 0;
+    animation-name: wv--ripple-out;
+}
+
+.wv-bg>.wv--ripples .wv--ripple {
+    --wv-opacity-to: 1;
+    --wv-opacity-from: 1;
+    background: currentColor;
+}
+
+.wv--ripple-out.wv--ripple-ghost.wv--ripple-ghost-confirmed {
+    --wv-opacity-to: 0;
+    --wv-opacity-from: 0;
+}
+
+@keyframes wv-cntr-ripple-in {
+    0% {
+        width: calc(var(--wv-diameter) * 1px);
+        height: calc(var(--wv-diameter) * 1px);
+        top: calc(var(--wv-y) * 1px);
+        left: calc(var(--wv-x) * 1px);
+        opacity: var(--wv-opacity-from, 0.1);
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    to {
+        top: 50%;
+        left: 50%;
+        opacity: var(--wv-opacity-to, 0.21);
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes wv--ripple-in {
+    0% {
+        opacity: var(--wv-opacity-from, 0.1);
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    to {
+        opacity: var(--wv-opacity-to, 0.21);
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes wv--ripple-out {
+    0% {
+        opacity: var(--wv-opacity-to, 0.21);
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    to {
+        opacity: var(--wv-opacity-from, 0.1);
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
