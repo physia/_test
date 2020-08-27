@@ -1,0 +1,243 @@
+<html light="" class="--rtl --dark --env" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="initial-scale=1, width=device-width" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#fff">
+    <link href="dist/css/kimia.css" rel="stylesheet">
+    <link href="dist/css/widgets.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Arabic+Kufi|Product+Sans:wght@400;500;700"
+        rel="stylesheet">
+    <style>
+        html {
+            font-family: 'Product Sans', 'Droid Arabic Kufi';
+        }
+
+        .show-grid * {
+            outline: 1px solid deeppink;
+        }
+
+        .show-padding * {
+            background-image: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%), linear-gradient(to bottom, rgba(255, 203, 0, 0.25) 0%, rgba(255, 203, 0, 0.25) 100%);
+            background-clip: content-box, padding-box;
+        }
+    </style>
+    <title>Physia Framework</title>
+    <meta content="Homepage" itemprop="name" name="twitter:title" property="og:title">
+    <meta
+        content="Physia is web framework, easy to use and powerful, we made kimia to make creating web-ui easy for everyone."
+        itemprop="description" name="twitter:description" property="og:description">
+    <meta content="https://kimia.github.io/framework/images/kimia-ar.jpg" itemprop="image" name="twitter:image"
+        property="og:image">
+    <meta content="https://kimia.github.io/framework/index.html" itemprop="url" name="twitter:url" property="og:url">
+    <meta content="Physia Framework" property="og:site_name">
+    <meta content="article" property="og:type">
+    <meta content="summary" name="twitter:card">
+    <meta content="#ffffff" name="theme-color">
+    <meta content="telephone=no" name="format-detection">
+    <meta
+        content="Physia is web framework, easy to use and powerful, we made kimia to make creating web-ui easy for everyone."
+        name="description">
+    <base href="/framework">
+</head>
+
+<body class="#10 m:#9">
+    <div class="b b-cl h-vh">
+
+        <main class="b-fg b-c a-c">
+            <div class="m:x10 l:x8 m-x-a m-y-6">
+                <h1 class="c-p-t #6 m:#5 l:#4 Case" id="timer"><span id="th">00</span>:<span id="tm">00</span><span
+                        class="#6 o-6">:</span><span id="ts" class="#6 o-6">00</span></h1>
+                <div style="width: 150px;height: 150px;margin: auto;" class="b-c b-cl rlt">
+                    <svg viewBox="0 0 38 38" style="--prg-p: 55;" id="ph" class="o-1 prgc abs u-10">
+                        <circle cx="50%" cy="50%" r="18" style="stroke-width: 100%;"></circle>
+                    </svg>
+                    <svg viewBox="0 0 38 38" style="--prg-p: 30;" class="o-3 prgc abs u-f" id="pm">
+                        <circle cx="50%" cy="50%" r="18" style="stroke-width: 3px;"></circle>
+                    </svg>
+                    <svg viewBox="0 0 38 38" style="--prg-p: 55;" class="o-5 prgc abs u-f" id="psm">
+                        <circle cx="50%" cy="50%" r="18" style="stroke-width: 0.5px;"></circle>
+                    </svg>
+                    <svg viewBox="0 0 38 38" style="--prg-p: 55;" class="prgc abs u-f" id="ps">
+                        <circle cx="50%" cy="50%" r="18" style="stroke-width: 0.5px;"></circle>
+                    </svg>
+                    <div>
+                        <button id="play-btn" class="unt btn-n u-8 c1-t"><i
+                                class="material-icons -i-x">play_arrow</i></button>
+                        <button id="pouse-btn" class="unt btn-n u-8 c1-t"><i class="material-icons">pause</i></button>
+                        <button id="reset-btn" class="unt btn-n u-8 c1-t"><i class="material-icons">stop</i></button>
+                    </div>
+                </div>
+                <div id="res" class="p-y-5 w-15 m-a">
+                    <label class="swt b-j-sb unt itm p-s-5 CASE"><span class="s-d">مؤخراٍ</span>
+                        <div>
+
+
+                            <input type="checkbox" id="theme" checked>
+                            <div class="swt-hnd">
+                                <div class="hnd"></div>
+                            </div>
+                        </div>
+                    </label>
+
+                </div>
+
+            </div>
+        </main>
+        <footer class="p-10 a-c o-8">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 721 193"
+                class="h-6">
+                <defs>
+                    <style>
+                        .cls-1 {
+                            fill: currentColor;
+                        }
+
+                        .cls-2 {
+                            fill: url(#linear-gradient);
+                        }
+
+                        .cls-3 {
+                            fill: url(#linear-gradient-2);
+                        }
+                    </style>
+                    <linearGradient id="linear-gradient" x1="263" y1="62.53" x2="192.14" y2="62.53"
+                        gradientTransform="translate(-193.57)" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#15ffe1"></stop>
+                        <stop offset="0.19" stop-color="#13f6e4"></stop>
+                        <stop offset="0.49" stop-color="#0ddded"></stop>
+                        <stop offset="0.88" stop-color="#03b4fa"></stop>
+                        <stop offset="1" stop-color="#00a6ff"></stop>
+                    </linearGradient>
+                    <linearGradient id="linear-gradient-2" x1="591.87" y1="138.36" x2="546.99" y2="138.36"
+                        gradientTransform="matrix(1, 0, 0, -1, 0, 186.59)" xlink:href="#linear-gradient">
+                    </linearGradient>
+                </defs>
+                <path class="cls-1"
+                    d="M64.24,32.18h0A64.24,64.24,0,0,0,0,96.41v16.06a16.06,16.06,0,0,0,16.06,16.06h0a16.06,16.06,0,0,0,16.06-16.06V96.41A32.12,32.12,0,0,1,64.24,64.29h0A32.12,32.12,0,0,1,96.35,96.41h0a32.12,32.12,0,0,1-32.11,32.12H48.18a16.06,16.06,0,0,0-16.06,16.06h0a16.06,16.06,0,0,0,16.06,16.06H64.24a64.24,64.24,0,0,0,64.23-64.24h0A64.23,64.23,0,0,0,64.24,32.18Z">
+                </path>
+                <circle cx="30.35" cy="62.53" r="25.35" style="fill: url(#linear-gradient);"></circle>
+                <rect class="cls-1" x="551.06" y="32.18" width="32.12" height="128.49" rx="16.06"></rect>
+                <rect x="551.06" y="32.18" width="32.12" height="32.12" rx="16.06"
+                    style="fill: url(#linear-gradient-2);">
+                </rect>
+                <path class="cls-1"
+                    d="M202,32.18h0a63.92,63.92,0,0,0-32.12,8.61V16.68c0-.19,0-.37,0-.56v-.06A16.06,16.06,0,0,0,153.84,0h-.06a16.1,16.1,0,0,0-4.58.67c-.52.2-1.06.39-1.59.57a16.05,16.05,0,0,0-9.87,14.46v.78a2.64,2.64,0,0,1,0,.29V96.41h0v48.17a16.06,16.06,0,0,0,32.12,0V96.42h0A32.12,32.12,0,0,1,202,64.29h0a32.12,32.12,0,0,1,32.12,32.12v48.18a16.06,16.06,0,0,0,16.06,16.06h0a16.06,16.06,0,0,0,16.06-16.06V96.41A64.24,64.24,0,0,0,202,32.18Z">
+                </path>
+                <path class="cls-1"
+                    d="M339.74,160.65h0A63.9,63.9,0,0,0,371.86,152v24.12c0,.19,0,.37,0,.56v.06a16.06,16.06,0,0,0,16.06,16.06H388a15.76,15.76,0,0,0,4.58-.68c.53-.2,1.06-.39,1.6-.56A16.05,16.05,0,0,0,404,177.13v-.78c0-.1,0-.19,0-.29V96.42h0V48.24a16.06,16.06,0,0,0-32.12,0V96.41h0a32.12,32.12,0,0,1-32.12,32.11h0a32.12,32.12,0,0,1-32.11-32.12V48.24a16.06,16.06,0,0,0-16.06-16.06h0a16.06,16.06,0,0,0-16.06,16.06V96.41A64.24,64.24,0,0,0,339.74,160.65Z">
+                </path>
+                <path class="cls-1"
+                    d="M538.9,105.55a40.17,40.17,0,0,0-35.47-25.17l-.63,0c-.39,0-.78,0-1.18,0H461.46v0h-8.61a8.05,8.05,0,0,1-.05-16.06h72.93a16.06,16.06,0,0,0,0-32.11h-72.3l-1.18,0a40.16,40.16,0,0,0-38.16,32.08h0a40.26,40.26,0,0,0-.82,8h0a39.82,39.82,0,0,0,2.89,14.93v0a40.18,40.18,0,0,0,35.73,25.17c.51,0,1,0,1.55,0h49a8,8,0,0,1-.84,16H461.91l-.44,0-.44,0h-31.7a16.06,16.06,0,1,0,0,32.12H461l.44,0h0l.44,0h39.71a40.14,40.14,0,0,0,40.16-40.16h0a40,40,0,0,0-2.87-14.92Z">
+                </path>
+                <path class="cls-1"
+                    d="M721,72.33a40.26,40.26,0,0,0-.82-8h0a40.89,40.89,0,0,0-2.06-6.89A40.16,40.16,0,0,0,682,32.2c-.39,0-.78,0-1.18,0H608.51a16.06,16.06,0,1,0,0,32.11h41.93l30.95,0c4.21,0,7.45,3.78,7.45,8a8,8,0,0,1-7.45,8h-8.62v0H632.61c-.4,0-.79,0-1.18,0l-.62,0a40.18,40.18,0,0,0-35.48,25.17v0a40.14,40.14,0,0,0-2.87,14.91h0a40.17,40.17,0,0,0,40.16,40.16h39.71l.44,0h0l.44,0h31l.66,0A16.06,16.06,0,0,0,721,144.61V75.35c0-.34,0-.67-.05-1,0-.67.05-1.34.05-2ZM673.2,128.52l-.44,0-.44,0H632.61a8,8,0,0,1-.84-16h49c.52,0,1,0,1.54,0a39.68,39.68,0,0,0,6.5-.79v16.85Z">
+                </path>
+            </svg>
+            <div id="caption" class="o-5 m-t-3">26</div>
+        </footer>
+    </div>
+
+    <script>
+        var timer = document.getElementById("timer");
+        var res = document.getElementById("res");
+        var caption = document.getElementById("caption");
+        var playBtn = document.getElementById("play-btn");
+        var pouseBtn = document.getElementById("pouse-btn");
+        var resetBtn = document.getElementById("reset-btn");
+        var themeSwt = document.getElementById("theme");
+
+        
+
+        var clock = {
+            s: document.getElementById("ts"),
+            m: document.getElementById("tm"),
+            h: document.getElementById("th"),
+        }
+        var progs = {
+            sM: document.getElementById("psm"),
+            s: document.getElementById("ps"),
+            m: document.getElementById("pm"),
+            h: document.getElementById("ph"),
+        }
+
+
+        var time = {
+            ms: 0,
+            s: 0,
+            m: 0,
+            h: 0,
+        };
+
+        var timerFn = () => {
+
+        time.ms++;
+        time.s = Math.floor((time.ms/10) % 60);
+        time.m = Math.floor((time.ms/10) / 60 % 60);
+        time.h = Math.floor((time.ms/10) / 3600 % 60);
+        caption.innerHTML = to00(time.ms);
+        clock.s.innerHTML = to00(time.s);
+        clock.m.innerHTML = to00(time.m);
+        clock.h.innerHTML = to00(time.h);
+        //
+        //--prg-p
+        progs.s.style.setProperty("--prg-p",time.s*100/60);
+        // progs.m.style.setProperty("--prg-p",time.m*100/60);
+        // progs.h.style.setProperty("--prg-p",time.h*100/60);
+        //
+        progs.sM.style.setProperty("--prg-p",(time.ms/10) *100/60);
+        progs.m.style.setProperty("--prg-p", ((time.ms/10) *100/60)/60);
+        progs.h.style.setProperty("--prg-p", ((time.ms/10) *100/60)/(60*24));
+
+        }
+
+        var to00 = (nm) => {
+            let nmb = nm.toString();
+            return nmb.length > 1?nmb:"0"+nmb;
+        }
+
+
+        var timerS = 100;
+
+        var timeRun = setInterval(timerFn, timerS);
+
+        var playTimer = function () {
+            clearInterval(timeRun);
+            timeRun = setInterval(timerFn, timerS);
+        }
+        var pouseTimer = function () {
+            clearInterval(timeRun);
+        }
+        var resetTimer = function () {
+            pouseTimer();
+            time.ms = 0;
+            caption.innerHTML = time.s;
+
+            res.insertAdjacentHTML( 'beforeend', '<div class="ln"></div><div class="unt itm Case p-s-5">'+to00(time.h)+':'+to00(time.m)+':'+to00(time.s)+':'+to00(time.ms)+'</div>' );
+        }
+        var changeTheme = function (e) {
+            if(!e.target.checked) {
+            document.documentElement.classList.remove("--dark");
+            document.documentElement.classList.add("--light");
+            } else {
+            document.documentElement.classList.remove("--light");
+            document.documentElement.classList.add("--dark");
+            }
+        }
+
+        //
+
+        playBtn.addEventListener("click", playTimer);
+        pouseBtn.addEventListener("click", pouseTimer);
+        resetBtn.addEventListener("click", resetTimer);
+        themeSwt.addEventListener("change", changeTheme)
+    </script>
+
+
+
+
+</body>
+
+</html>
